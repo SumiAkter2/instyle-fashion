@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Product from "../Product/Product";
+import SearchInput from "../SearchInput/SearchInput";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -12,11 +13,11 @@ const Shop = () => {
         setProducts(data.slice(3, 41));
       });
   }, []);
-  console.log(products);
+  // console.log(products);
+
   return (
     <div>
-      <h1>Shop :{products.length} </h1>
-
+      <SearchInput products={products}></SearchInput>
       <div className="grid lg:grid-cols-4  gap-4 p-8 ">
         {products.map((p) => (
           <Product key={products.id} p={p}></Product>

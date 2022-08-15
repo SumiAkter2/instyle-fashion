@@ -2,8 +2,9 @@ import React from "react";
 
 const Product = ({ p }) => {
   return (
-    <div className="border-2 hover:shadow-2xl rounded-md text-start p-4 ">
+    <div className="border-2 hover:shadow-2xl hover:bg-slate-200 rounded-md text-start p-4 ">
       <img
+        className="border-0 rounded-lg"
         style={{ width: "150px", paddingLeft: "20px" }}
         src={p.image_link}
         alt="product-img"
@@ -45,7 +46,7 @@ const Product = ({ p }) => {
         />
       </div>
       <br />
-      <button class="btn mb-2 w-full btn-info text-cyan-500 btn-outline">
+      <button class="btn my-2 w-full btn-info text-cyan-500 btn-outline">
         Add to cart
       </button>
     </div>
