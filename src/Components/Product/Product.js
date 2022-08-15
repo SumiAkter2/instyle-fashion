@@ -1,10 +1,20 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Product = ({ p, addToCart }) => {
+  const navigate = useNavigate();
+  const detailInfo = () => {
+    navigate("/shop/" + p.id);
+    console.log("li");
+  };
   return (
     <div className="border-2 hover:shadow-2xl hover:bg-black/25 rounded-md text-start p-4 shop-container">
       <div>
-        <button className="btn btn-ghost detail-btn hidden">Detail</button>
+        <button
+          onClick={detailInfo}
+          className="btn btn-ghost detail-btn hidden"
+        >
+          Detail
+        </button>
       </div>
       <img
         className="border-0 rounded-lg "

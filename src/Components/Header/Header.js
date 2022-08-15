@@ -25,7 +25,7 @@ const Header = () => {
             tabIndex="0"
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li to="/">
+            <li to="/shop">
               <a>SHOP</a>
             </li>
 
@@ -45,7 +45,7 @@ const Header = () => {
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0  font-bold">
-          <li to="/">
+          <li to="/shop">
             <a>SHOP</a>
           </li>
 
