@@ -1,6 +1,6 @@
 import React from "react";
 
-const Product = ({ p }) => {
+const Product = ({ p, addToCart }) => {
   return (
     <div className="border-2 hover:shadow-2xl hover:bg-slate-200 rounded-md text-start p-4 ">
       <img
@@ -46,7 +46,10 @@ const Product = ({ p }) => {
         />
       </div>
       <br />
-      <button class="btn my-2 w-full btn-info text-cyan-500 btn-outline">
+      <button
+        onClick={addToCart}
+        class="btn my-2 w-full btn-info text-cyan-500 btn-outline"
+      >
         Add to cart
       </button>
     </div>
