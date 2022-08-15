@@ -2,9 +2,12 @@ import React from "react";
 
 const Product = ({ p, addToCart }) => {
   return (
-    <div className="border-2 hover:shadow-2xl hover:bg-slate-200 rounded-md text-start p-4 ">
+    <div className="border-2 hover:shadow-2xl hover:bg-black/25 rounded-md text-start p-4 shop-container">
+      <div>
+        <button className="btn btn-ghost detail-btn hidden">Detail</button>
+      </div>
       <img
-        className="border-0 rounded-lg"
+        className="border-0 rounded-lg "
         style={{ width: "150px", paddingLeft: "20px" }}
         src={p.image_link}
         alt="product-img"

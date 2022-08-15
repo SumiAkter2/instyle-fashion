@@ -4,6 +4,7 @@ const SearchInput = ({ cart }) => {
   return (
     <div>
       <div className="flex justify-center p-8 bg-slate-400 m-4">
+        <img className="w-20" src="shopping1.jpg" alt="" />
         <input
           type="text"
           placeholder="Type here"
