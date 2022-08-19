@@ -1,6 +1,6 @@
 import React from "react";
 
-const SearchInput = ({ cart }) => {
+const SearchInput = () => {
   return (
     <div>
       <div className="flex justify-center p-8 bg-slate-400 m-4 rounded-md">
@@ -11,7 +11,7 @@ const SearchInput = ({ cart }) => {
           className="input input-bordered input-md w-full max-w-md"
         />
         <button className="btn btn-outline mx-4 ">Search</button>
-        <div className="dropdown dropdown-end flex-none">
+        {/* <div className="dropdown dropdown-end flex-none">
           <label tabIndex="0" className="btn btn-ghost btn-circle">
             <div className="indicator">
               <svg
@@ -45,7 +45,7 @@ const SearchInput = ({ cart }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

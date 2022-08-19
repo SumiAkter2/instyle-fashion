@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Header from "../Header/Header";
 import Product from "../Product/Product";
 import SearchInput from "../SearchInput/SearchInput";
 import "./Shop.css";
@@ -12,16 +13,15 @@ const Shop = () => {
         console.log(data.meals);
         setProducts(data.meals);
       });
-  }, []);
-  // console.log(products);
+  }, [products]);
+
   const addToCart = (products) => {
     const newProduct = [...cart, products];
     setCart(newProduct);
-    console.log("added");
   };
   return (
     <div>
-      <SearchInput cart={cart}></SearchInput>
+      <Header cart={cart}></Header>
       <div className="grid lg:grid-cols-4  gap-4 p-8 ">
         {products.map((p) => (
           <Product key={products.idMeal} addToCart={addToCart} p={p}></Product>
