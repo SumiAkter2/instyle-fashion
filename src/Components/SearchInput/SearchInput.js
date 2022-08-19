@@ -3,7 +3,7 @@ import React from "react";
 const SearchInput = ({ cart }) => {
   return (
     <div>
-      <div className="flex justify-center p-8 bg-slate-400 m-4">
+      <div className="flex justify-center p-8 bg-slate-400 m-4 rounded-md">
         <img className="w-20" src="shopping1.jpg" alt="" />
         <input
           type="text"
