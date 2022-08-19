@@ -13,12 +13,14 @@ const DetailInfo = () => {
   console.log(product);
   return (
     <div>
-      <h1>helo</h1>
-      <h1>Details: {productId}</h1>
+     
+      {/* <h1>Details: {productId}</h1> */}
 
-      {product.map((p) => (
-        <Info key={p.idMeal} p={p}></Info>
-      ))}
+      <div className="">
+        {product.map((p) => (
+          <Info key={p.idMeal} p={p} productId={productId}></Info>
+        ))}
+      </div>
     </div>
   );
 };
