@@ -8,7 +8,7 @@ const Home = () => {
       .then((res) => res.json())
       .then((data) => setCategory(data.categories));
   }, []);
-  console.log(category.categories);
+  // console.log(category.categories);
   return (
     <div>
       <div className="grid lg:grid-cols-4  gap-4 p-8 ">

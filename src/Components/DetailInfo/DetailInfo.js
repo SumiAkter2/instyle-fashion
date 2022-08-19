@@ -13,7 +13,6 @@ const DetailInfo = () => {
   console.log(product);
   return (
     <div>
-     
       {/* <h1>Details: {productId}</h1> */}
 
       <div className="">

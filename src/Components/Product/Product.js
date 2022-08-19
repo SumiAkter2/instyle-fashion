@@ -9,7 +9,7 @@ const Product = ({ p, addToCart }) => {
     <div className="border-2 hover:shadow-2xl hover:bg-slate-200 rounded-md text-start p-4 shop-container">
       <div>
         <div className="flex justify-end">
-          <div class="tooltip tooltip-left tooltip-info" data-tip="Details">
+          <div className="tooltip tooltip-left tooltip-info" data-tip="Details">
             <button
               onClick={detailInfo}
               className="btn btn-info btn-circle  text-cyan-500 btn-outline "

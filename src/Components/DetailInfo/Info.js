@@ -27,10 +27,10 @@ const Info = ({ p, productId }) => {
               {p.strIngredient13},{p.strIngredient14}.
             </p>
             <div
-              class="tooltip tooltip-bottom tooltip-info"
+              className="tooltip tooltip-bottom tooltip-info"
               data-tip={p.strInstructions}
             >
-              <p class="py-6 text-left">
+              <p className="py-6 text-left">
                 <span className="font-bold"> Instructions :</span>
                 {p.strInstructions.slice(0, 400)}...
               </p>
