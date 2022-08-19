@@ -6,12 +6,11 @@ const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   useEffect(() => {
-    fetch(
-      "https://makeup-api.herokuapp.com/api/v1/products.json?product_category=powder&product_type=blush"
-    )
+    fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=fish")
       .then((res) => res.json())
       .then((data) => {
-        setProducts(data.slice(3, 41));
+        console.log(data.meals);
+        setProducts(data.meals);
       });
   }, []);
   // console.log(products);
@@ -25,7 +24,7 @@ const Shop = () => {
       <SearchInput cart={cart}></SearchInput>
       <div className="grid lg:grid-cols-4  gap-4 p-8 ">
         {products.map((p) => (
-          <Product key={products.id} addToCart={addToCart} p={p}></Product>
+          <Product key={products.idMeal} addToCart={addToCart} p={p}></Product>
         ))}
       </div>
     </div>

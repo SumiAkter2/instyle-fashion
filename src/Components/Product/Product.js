@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Product = ({ p, addToCart }) => {
   const navigate = useNavigate();
   const detailInfo = () => {
-    navigate("/shop/" + p.id);
-    console.log("li");
+    navigate(`/shops/${p.idMeal}`);
   };
   return (
     <div className="border-2 hover:shadow-2xl hover:bg-black/25 rounded-md text-start p-4 shop-container">
@@ -19,17 +18,17 @@ const Product = ({ p, addToCart }) => {
       <img
         className="border-0 rounded-lg "
         style={{ width: "150px", paddingLeft: "20px" }}
-        src={p.image_link}
+        src={p.strMealThumb}
         alt="product-img"
       />
-      <h1>{p.name}</h1>
-      <h1>
+      <h1>{p.strMeal}</h1>
+      {/* <h1>
         Brand: <span>{p.brand ? p.brand : "Null"}</span>
-      </h1>
+      </h1> */}
 
-      <h1>
+      {/* <h1>
         Price: <span className="font-bold">${p.price}</span>{" "}
-      </h1>
+      </h1> */}
       <div class="rating rating-xs">
         <input
           type="radio"

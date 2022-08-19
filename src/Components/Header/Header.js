@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
+                d="M4 6NavLink6M4 12h8m-8 6NavLink6"
               />
             </svg>
           </label>
@@ -25,12 +26,12 @@ const Header = () => {
             tabIndex="0"
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li to="/shop">
-              <a>SHOP</a>
+            <li>
+              <NavLink to="/shop">SHOP</NavLink>
             </li>
 
-            <li to="order">
-              <a>ORDER</a>
+            <li>
+              <NavLink to="/order">ORDER</NavLink>
             </li>
           </ul>
         </div>
@@ -40,17 +41,20 @@ const Header = () => {
             src="favicon.ico"
             alt="fashion-logo"
           />
-          <h1 className="text-2xl font-sans font-bold">Instyle Fashion</h1>
+
+          <NavLink to="/" className="text-2xl font-sans font-bold">
+            Instyle Fashion
+          </NavLink>
         </div>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal p-0  font-bold">
-          <li to="/shop">
-            <a>SHOP</a>
+          <li>
+            <NavLink to="/shop">SHOP</NavLink>
           </li>
 
-          <li to="order">
-            <a>ORDER</a>
+          <li>
+            <NavLink to="/order">ORDER</NavLink>
           </li>
         </ul>
       </div>
